@@ -1,13 +1,190 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-image: url("https://images.alphacoders.com/581/581224.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a span {
+  color: #f7f7f7 !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: #c22121 !important;
+}
+
+a:hover {
+  color: #c74949ad !important;
+}
+
+.container-fluid,
+.container {
+  overflow: auto;
+  max-height: 95vh;
+}
+
+.details {
+  overflow: hidden;
+}
+
+.card {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/1200px-Pok%C3%A9_Ball_icon.svg.png")
+    center no-repeat;
+  background-size: contain;
+  border: 5px solid !important;
+  background-color: #a59e9e !important;
+}
+
+.poke-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pokeCard-body {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-transform: uppercase;
+  -webkit-box-shadow: inset -4px -47px 101px -44px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: inset -4px -47px 101px -44px rgba(0, 0, 0, 0.69);
+  box-shadow: inset -4px -47px 101px -44px rgba(0, 0, 0, 0.69);
+  background-color: #c74949;
+  padding: 0 !important;
+  color: white !important;
+}
+
+.poke-index {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.pokemons {
+  border: 10px solid transparent;
+  border-image: url("./img/poke-border.png") 10 round;
+}
+
+.fighting {
+  border: 10px solid transparent;
+  border-image: url("./img/poke-border.png") 10 round;
+}
+
+.empty-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: "Courier New";
+  font-size: 1.5rem;
+  height: 50vh;
+}
+
+nav {
+  width: 100%;
+  background-position: center;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+nav img {
+  height: auto;
+  width: auto;
+  max-height: 72px;
+  max-width: 250px;
+}
+
+.container-fluid {
+  padding: 0 !important;
+}
+
+.left-content {
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 40px 0px;
+}
+
+.image-content {
+  text-shadow: 1px -5px 5px rgba(0, 0, 0, 0.71);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+}
+
+.image-content-img {
+  background: url("https://media4.giphy.com/media/Wmcn0iYCAeHvhXMwnv/giphy.gif?cid=ecf05e471cymo3i54cqs6ew3km8lhxjxf5og4ctam6vvehij&rid=giphy.gif&ct=s")
+      center no-repeat,
+    url("https://cdn2.iconfinder.com/data/icons/pokemon-filledoutline/64/pokeball-people-pokemon-nintendo-video-game-gaming-gartoon-ball-512.png");
+  background-size: contain;
+}
+
+.right-content {
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 40px 0px;
+}
+
+.pokemon-forms-title {
+  font-size: 1.5rem !important;
+  font-family: "Segoe UI";
+  color: white;
+}
+
+.pokemon-types-title {
+  font-size: 1.5rem !important;
+  font-family: "Segoe UI";
+  color: white;
+}
+
+.pokemon-type-2,
+.pokemon-type {
+  background-color: #c74949;
+  width: fit-content;
+  border-radius: 15px 15px 15px 0px;
+  padding: 5px 30px 5px 10px;
+  font-family: "Courier New";
+  color: white;
+  margin: 5px 0px 5px 10px;
+}
+
+.pokemon-type-2 {
+  margin-left: 20px !important;
+}
+
+.pokemon-type-text {
+  margin-left: 5px;
+}
+
+.pokemon-stats {
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.pokemon-form {
+  background-color: rgb(36, 23, 7);
+  width: fit-content;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 5px 10px;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+  color: aliceblue;
+}
+
+.poke-ability {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  font-family: "Franklin Gothic Medium";
+}
+
+.poke-detail {
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  color: #000000;
+  font-weight: bold;
 }
