@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export const pokemonFightSlice = createSlice({
   name: "pokemonFight",
   initialState: {
-    list: [{ index: "45", image: "", name: "vv" }],
+    list: [],
   },
   reducers: {
     setPokemonFightList: (state, action) => {
